@@ -24,8 +24,8 @@ public class DigitAction extends AnAction {
         if (selectedText == null) {
             return;
         }
-        String newText = selectedText.toLowerCase();
-        newText = newText.replace("one", "1");
+//        String newText = selectedText.toLowerCase();
+        String newText = selectedText.replace("one", "1");
         newText = newText.replace("two", "2");
         newText = newText.replace("three", "3");
         newText = newText.replace("four", "4");
@@ -34,7 +34,7 @@ public class DigitAction extends AnAction {
         newText = newText.replace("seven", "7");
         newText = newText.replace("eight", "8");
         newText = newText.replace("nine", "9");
-        if (newText.equals(selectedText.toLowerCase())){
+        if (newText.equals(selectedText)) {
             return;
         }
         String finalNewText = newText;
