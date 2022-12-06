@@ -34,6 +34,7 @@ public class DigitAction extends AnAction {
         newText = newText.replace("seven", "7");
         newText = newText.replace("eight", "8");
         newText = newText.replace("nine", "9");
+        newText = newText.replace("zero", "0");
         if (newText.equals(selectedText)) {
             return;
         }
