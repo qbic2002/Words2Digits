@@ -21,11 +21,13 @@
     <!-- Product and plugin compatibility requirements.
          Read more: https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html -->
     <depends>com.intellij.modules.lang</depends>
+    <depends>com.intellij.java</depends>
 
     <!-- Extension points defined by the plugin.
          Read more: https://plugins.jetbrains.com/docs/intellij/plugin-extension-points.html -->
     <extensions defaultExtensionNs="com.intellij">
 
+        <annotator language="JAVA" implementationClass="com.example.myplugin.DigitAnnotator"/>
     </extensions>
     <actions>
         <action id="com.example.myplugin.DigitAction" class="com.example.myplugin.DigitAction" text="Set Digit"
