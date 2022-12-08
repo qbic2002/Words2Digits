@@ -23,7 +23,7 @@ public class DigitAnnotator implements Annotator {
 
         TextRange textRange = TextRange.from(element.getTextOffset(), element.getTextLength());
         if (element.getText().contains("one") || element.getText().contains("two") || element.getText().contains("three") || element.getText().contains("four") || element.getText().contains("five") || element.getText().contains("six") || element.getText().contains("seven") || element.getText().contains("eight") || element.getText().contains("nine") || element.getText().contains("zero")) {
-            TextAttributes textAttributes = DefaultLanguageHighlighterColors.NUMBER.getDefaultAttributes();
+            TextAttributes textAttributes = DefaultLanguageHighlighterColors.NUMBER.getDefaultAttributes().clone();
             textAttributes.setErrorStripeColor(JBColor.blue);
             textAttributes.setEffectType(EffectType.WAVE_UNDERSCORE);
             textAttributes.setEffectColor(JBColor.blue);
